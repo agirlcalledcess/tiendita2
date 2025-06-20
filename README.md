@@ -30,4 +30,4 @@ Tiendita2 es una tienda online sencilla desarrollada como proyecto académico. L
 
 1. Clonar el repositorio:  
    ```bash
-   git clone https://github.com/TU_USUARIO/tiendita2.git
+   git clone https://github.com/agirlcalledcess/tiendita2.git
