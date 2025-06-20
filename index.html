@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tienda online de productos modernos y útiles. Compra fácil y rápido.">
+  <title>Tienda Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tienda Online</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#carrito">Carrito</a>
+    </nav>
+  </header>
+
+  <!-- Carrusel / Hero -->
+  <section id="inicio" class="hero">
+    <div class="slide activo">
+      <img src="img/slide1.jpg" alt="Producto 1">
+      <h2>Bienvenido a nuestra tienda</h2>
+      <button onclick="scrollToProductos()">Ver productos</button>
+    </div>
+    <div class="slide">
+      <img src="img/slide2.jpg" alt="Producto 2">
+      <h2>Ofertas especiales</h2>
+    </div>
+  </section>
+
+  <!-- Descripción -->
+  <section class="descripcion">
+    <h2>Sobre nosotros</h2>
+    <p>Somos una tienda online dedicada a ofrecer productos únicos con entrega rápida y segura.</p>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="producto" data-id="1" data-nombre="Producto 1" data-precio="25">
+      <img src="img/prod1.jpg" alt="Producto 1">
+      <h3>Producto 1</h3>
+      <p>$25</p>
+      <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+    </div>
+    <div class="producto" data-id="2" data-nombre="Producto 2" data-precio="40">
+      <img src="img/prod2.jpg" alt="Producto 2">
+      <h3>Producto 2</h3>
+      <p>$40</p>
+      <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+    </div>
+    <!-- Puedes duplicar más productos -->
+  </section>
+
+  <!-- Carrito -->
+  <section id="carrito" class="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+  </section>
+
+  <!-- Redes Sociales -->
+  <footer>
+    <p>Síguenos:</p>
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://instagram.com" target="_blank">Instagram</a> |
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </footer>
+</body>
+</html>
